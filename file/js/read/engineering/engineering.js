@@ -1,5 +1,4 @@
-﻿
-	function RETopic(i){
+﻿	function RETopic(i){//標題1
 		var topics = [
 						"末日餘生",
 						"正面思考",
@@ -22,7 +21,7 @@
 		return topics[i];
 	}
 
-	function RETopicc(i){
+	function RETopicc(i){//標題2(連結部分,藍色字體)
 		var topi = [
 					"我看《潛沙記》",
 					"我看《被討厭的勇氣》",
@@ -44,7 +43,7 @@
 		return topi[i];
 	}
 
-	function REClasses(i){
+	function REClasses(i){//班級
 		var classess = [
 						"四技電子一甲",
 						"四技電子一乙",
@@ -66,7 +65,7 @@
 		return classess[i];
 	}
 
-	function RENames(i){
+	function RENames(i){//姓名
 		var namess = [
 						"楊承霖",
 						"徐瑞佑",
