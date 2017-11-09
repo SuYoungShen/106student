@@ -1,6 +1,5 @@
-﻿
-	function RLTopic(i){//標題1
-		var topics = [
+//閱讀心得篇-生活創意學院-標題1
+		var RLTitle = [
 									"不完美中的完美",
 									"指引人生的方向",
 									"綻放‧蛻變‧重生",
@@ -21,11 +20,11 @@
 									"由苦難悟出的人生功課",
 									"人生歷程"
 								];
-		RL = topics.length;
-		return topics[i];
-	}
+//閱讀心得篇-生活創意學院-標題1
+	RLTotal = RLTitle.length;
+	
 
-	function RLTopicc(i){//標題2(連結部分,藍色字體)
+	function RLTopicc(i){//閱讀心得篇-生活創意學院-標題2(連結部分,藍色字體)
 		var topi = [
 									"我看《用腳飛翔的女孩──無臂單腳的奮鬥奇蹟》",
 									"我看《人生地圖》",
@@ -50,7 +49,7 @@
 		return topi[i];
 	}
 
-	function RLClasses(i){//班級
+	function RLClasses(i){//閱讀心得篇-生活創意學院-班級
 		var classess = [
 										"四技幼保一甲",
 										"四技幼保一乙",
@@ -75,7 +74,7 @@
 		return classess[i];
 	}
 
-	function RLNames(i){//姓名
+	function RLNames(i){//閱讀心得篇-生活創意學院-姓名
 		var sc = "　";//如果名字只有兩個字,可以用帶入這個變數
 		var namess = [
 									"溫子瑩",
