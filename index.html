@@ -183,7 +183,7 @@
                     <p align="center"><b><font class="f">院</font></b></p>
                   </td>
 
-				  <script type="text/javascript">
+				 <script type="text/javascript">
           RM_Path = "file/file/student file/read/management/";
           File_Number++;
           Show(RMTotal, RMTitle, RM_Path, File_Number, RMLink, RMClasses, RMNames);
@@ -206,30 +206,15 @@
                     <p align="center"><b><font class="f">院</font></b></p>
                   </td>
                   <script type="text/javascript">
-					for(i = 0; i < 1; i++){
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+RLTopic(i)+"<br>");
-						document.write("<a href='file/file/student file/read/life/"+j+Deputy_File_Name+"'>"+RLTopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+RLClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+RLNames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
-				<script type="text/javascript">
-					for(i = 1; i < RL; i++){
-						document.write("<tr>");
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+RLTopic(i)+"<br>");
-						document.write("<a href='file/file/student file/read/life/"+j+Deputy_File_Name+"'>"+RLTopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+RLClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+RLNames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
+                    RL_Path = "file/file/student file/read/life/";
+                    File_Number++;
+                    Show(RLTotal, RLTitle, RL_Path, File_Number, RLLink, RLClasses, RLNames);
+                    // RLTotal = 計算總共幾筆;變數檔案在file/js/read/life
+                    // RLTitle = 閱讀心得篇-生活創意學院-標題1;變數檔案在file/js/read/life
+                    // RLLink = 閱讀心得篇-生活創意學院-標題2(連結部分,藍色字體);變數檔案在file/js/read/life
+                    // RLClasses = 閱讀心得篇-生活創意學院-班級;變數檔案在file/js/read/life
+                    // RLNames = 閱讀心得篇-生活創意學院-姓名;變數檔案在file/js/read/life
+                  </script>
 
                 <tr>
                   <td colspan="4">
@@ -240,7 +225,7 @@
                 </tr>
                 <tr>
 				<script>
-                  document.write("<td bgcolor='#3333cc' rowspan='"+(SE)+"' width='8%'>");
+                  document.write("<td bgcolor='#3333cc' rowspan='"+(SETotal)+"' width='8%'>");
 				</script>
 
                     <p align="center"><font class="f"><b>工</b></font></p>
@@ -249,33 +234,18 @@
 
                   </td>
                   <script type="text/javascript">
-					for(i = 0; i < 1; i++){
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+SETopic(i)+"<br>");
-						document.write("<a href='file/file/student file/study/engineering/"+j+Deputy_File_Name+"'>"+SETopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+SEClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+SENames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
-                <script type="text/javascript">
-					for(i = 1; i < SE; i++){
-						document.write("<tr>");
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+SETopic(i)+"<br>");
-						document.write("<a href='file/file/student file/study/engineering/"+j+Deputy_File_Name+"'>"+SETopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+SEClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+SENames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
+                    SE_Path = "file/file/student file/study/engineering/";
+                    File_Number++;
+                    Show(SETotal, SETitle, SE_Path, File_Number, SELink, SEClasses, SENames);
+                    // SETotal = 計算總共幾筆;變數檔案在file/js/read/life
+                    // SETitle = 閱讀心得篇-生活創意學院-標題1;變數檔案在file/js/read/life
+                    // SELink = 閱讀心得篇-生活創意學院-標題2(連結部分,藍色字體);變數檔案在file/js/read/life
+                    // SEClasses = 閱讀心得篇-生活創意學院-班級;變數檔案在file/js/read/life
+                    // SENames = 閱讀心得篇-生活創意學院-姓名;變數檔案在file/js/read/life
+                  </script>
 				<tr>
 				<script>
-                  document.write("<td bgcolor='#008000' rowspan='"+(ST)+"' width='8%'>");
+                  document.write("<td bgcolor='#008000' rowspan='"+(SMTotal)+"' width='8%'>");
 				</script>
 
                     <p align="center"><font class="f"><b>管</b></font></p>
@@ -285,30 +255,15 @@
 
                   </td>
                   <script type="text/javascript">
-					for(i = 0; i < 1; i++){
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+SMTopic(i)+"<br>");
-						document.write("<a href='file/file/student file/study/management/"+j+Deputy_File_Name+"'>"+SMTopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+SMClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+SMNames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
-                <script type="text/javascript">
-					for(i = 1; i < ST; i++){
-						document.write("<tr>");
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+SMTopic(i)+"<br>");
-						document.write("<a href='file/file/student file/study/management/"+j+Deputy_File_Name+"'>"+SMTopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+SMClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+SMNames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
+                    SM_Path = "file/file/student file/study/management/";
+                    File_Number++;
+                    Show(SMTotal, SMTitle, SM_Path, File_Number, SMLink, SMClasses, SMNames);
+                    // SMTotal = 計算總共幾筆;變數檔案在file/js/study/engineering/
+                    // SMTitle = 閱讀心得篇-管理學院-標題1;變數檔案在file/js/study/engineering/
+                    // SMLink = 閱讀心得篇-管理學院-標題2(連結部分,藍色字體);變數檔案在file/js/study/engineering/
+                    // SMClasses = 閱讀心得篇-管理學院-班級;變數檔案在file/js/study/engineering/
+                    // SMNames = 閱讀心得篇-管理學院-姓名;變數檔案在file/js/study/engineering/
+                  </script>
 
 			   <tr>
 				<script>
