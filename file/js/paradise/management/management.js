@@ -1,5 +1,4 @@
-﻿
-	function EMTopic(i){//標題1
+function EMTopic(i){//標題1
 		var topics = [
 									"雨裡藏著的故事",
 									"夢想是把雙面刃",

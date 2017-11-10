@@ -153,7 +153,7 @@
                   </td>
 
 				  <script type="text/javascript">
-
+          var sc = "　";//如果姓名只有兩個字可使用,如："蘇"+sc+"盛"
           RE_Path = "file/file/student file/read/engineering/";//檔案路徑
           File_Number = 0;//檔名以數字命名
           Deputy_File_Name = ".doc";//副檔名
@@ -258,16 +258,16 @@
                     SM_Path = "file/file/student file/study/management/";
                     File_Number++;
                     Show(SMTotal, SMTitle, SM_Path, File_Number, SMLink, SMClasses, SMNames);
-                    // SMTotal = 計算總共幾筆;變數檔案在file/js/study/engineering/
-                    // SMTitle = 閱讀心得篇-管理學院-標題1;變數檔案在file/js/study/engineering/
-                    // SMLink = 閱讀心得篇-管理學院-標題2(連結部分,藍色字體);變數檔案在file/js/study/engineering/
-                    // SMClasses = 閱讀心得篇-管理學院-班級;變數檔案在file/js/study/engineering/
-                    // SMNames = 閱讀心得篇-管理學院-姓名;變數檔案在file/js/study/engineering/
+                    // SMTotal = 計算總共幾筆;變數檔案在file/js/study/management/
+                    // SMTitle = 閱讀心得篇-管理學院-標題1;變數檔案在file/js/study/management/
+                    // SMLink = 閱讀心得篇-管理學院-標題2(連結部分,藍色字體);變數檔案在file/js/study/management/
+                    // SMClasses = 閱讀心得篇-管理學院-班級;變數檔案在file/js/study/management/
+                    // SMNames = 閱讀心得篇-管理學院-姓名;變數檔案在file/js/study/management/
                   </script>
 
 			   <tr>
 				<script>
-                  document.write("<td bgcolor='#880000' rowspan='"+(SL)+"' width='8%'>");
+                  document.write("<td bgcolor='#880000' rowspan='"+(SLTotal)+"' width='8%'>");
 				</script>
 
                     <p align="center"><font class="f"><b>生</b></font></p>
@@ -279,32 +279,15 @@
 
                   </td>
                   <script type="text/javascript">
-					// j=74;
-
-					for(i = 0; i < 1; i++){
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+SLTopic(i)+"<br>");
-						document.write("<a href='file/file/student file/study/life/"+j+Deputy_File_Name+"'>"+SLTopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+SLClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+SLNames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
-                <script type="text/javascript">
-					for(i = 1; i < SL; i++){
-						document.write("<tr>");
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+SLTopic(i)+"<br>");
-						document.write("<a href='file/file/student file/study/life/"+j+Deputy_File_Name+"'>"+SLTopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+SLClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+SLNames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
+                    SL_Path = "file/file/student file/study/life/";
+                    File_Number++;
+                    Show(SLTotal, SLTitle, SL_Path, File_Number, SLLink, SLClasses, SLNames);
+                    // SLTotal = 計算總共幾筆;變數檔案在file/js/study/life/
+                    // SLTitle = 閱讀心得篇-生活創意學院-標題1;變數檔案在file/js/study/life/
+                    // SLLink = 閱讀心得篇-生活創意學院-標題2(連結部分,藍色字體);變數檔案在file/js/study/life/
+                    // SLClasses = 閱讀心得篇-生活創意學院-班級;變數檔案在file/js/study/life/
+                    // SLNames = 閱讀心得篇-生活創意學院-姓名;變數檔案在file/js/study/life/
+                  </script>
 
 				<tr>
                   <td colspan="4">
@@ -313,40 +296,39 @@
                   </td>
                 </tr>
                 <tr>
-                <script>
-                  document.write("<td bgcolor='#996699' rowspan='"+(EE)+"' width='8%'>");
-				</script>
-                    <p align="center"><font class="f"><b>工</b></font></p>
-                    <p align="center"><b><font class="f">學</font></b></p>
-                    <p align="center"><b><font class="f">院 </font></b></p>
-                  </td>
-                  <script type="text/javascript">
-					for(i = 0; i < 1; i++){
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+EETopic(i)+"<br>");
-						document.write("<a href='file/file/student file/paradise/engineering/"+j+Deputy_File_Name+"'>"+EETopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+EEClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+EENames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
+                  <script>
+                    document.write("<td bgcolor='#996699' rowspan='"+(PETotal)+"' width='8%'>");
+
+                  </script>
+                  <p align="center"><font class="f"><b>工</b></font></p>
+                  <p align="center"><b><font class="f">學</font></b></p>
+                  <p align="center"><b><font class="f">院 </font></b></p>
+                </td>
                 <script type="text/javascript">
-					for(i = 1; i < EE; i++){
-						document.write("<tr>");
-						document.write("<td bordercolor='#000000' width='68%'>");
-						document.write("<font size='2'>"+EETopic(i)+"<br>");
-						document.write("<a href='file/file/student file/paradise/engineering/"+j+".doc'>"+EETopicc(i)+"</a></font>");
-						document.write("</td>");
-						document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+EEClasses(i)+"</font></td>");
-						document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+EENames(i)+"</font></td>");
-						document.write("</tr>");
-						j++;
-					}
-				</script>
-
-
+                for(i = 0; i < 1; i++){
+                  document.write("<td bordercolor='#000000' width='68%'>");
+                  document.write("<font size='2'>"+EETopic(i)+"<br>");
+                  document.write("<a href='file/file/student file/paradise/engineering/"+j+Deputy_File_Name+"'>"+EETopicc(i)+"</a></font>");
+                  document.write("</td>");
+                  document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+EEClasses(i)+"</font></td>");
+                  document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+EENames(i)+"</font></td>");
+                  document.write("</tr>");
+                  j++;
+                }
+                </script>
+                <script type="text/javascript">
+                for(i = 1; i < PETotal; i++){
+                  document.write("<tr>");
+                  document.write("<td bordercolor='#000000' width='68%'>");
+                  document.write("<font size='2'>"+EETopic(i)+"<br>");
+                  document.write("<a href='file/file/student file/paradise/engineering/"+j+".doc'>"+EETopicc(i)+"</a></font>");
+                  document.write("</td>");
+                  document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+EEClasses(i)+"</font></td>");
+                  document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+EENames(i)+"</font></td>");
+                  document.write("</tr>");
+                  j++;
+                }
+                </script>
                 <tr>
 					<script>
 					  document.write("<td bgcolor='#008800' rowspan='"+(EM)+"' width='8%'>");
