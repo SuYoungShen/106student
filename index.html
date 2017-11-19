@@ -305,29 +305,14 @@
                   <p align="center"><b><font class="f">院 </font></b></p>
                 </td>
                 <script type="text/javascript">
-                for(i = 0; i < 1; i++){
-                  document.write("<td bordercolor='#000000' width='68%'>");
-                  document.write("<font size='2'>"+EETopic(i)+"<br>");
-                  document.write("<a href='file/file/student file/paradise/engineering/"+j+Deputy_File_Name+"'>"+EETopicc(i)+"</a></font>");
-                  document.write("</td>");
-                  document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+EEClasses(i)+"</font></td>");
-                  document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+EENames(i)+"</font></td>");
-                  document.write("</tr>");
-                  j++;
-                }
-                </script>
-                <script type="text/javascript">
-                for(i = 1; i < PETotal; i++){
-                  document.write("<tr>");
-                  document.write("<td bordercolor='#000000' width='68%'>");
-                  document.write("<font size='2'>"+EETopic(i)+"<br>");
-                  document.write("<a href='file/file/student file/paradise/engineering/"+j+".doc'>"+EETopicc(i)+"</a></font>");
-                  document.write("</td>");
-                  document.write("<td bordercolor='#000000' width='14%' align='left'><font size='2'>"+EEClasses(i)+"</font></td>");
-                  document.write("<td bordercolor='#000000' width='9%' align='left'><font size='2'>"+EENames(i)+"</font></td>");
-                  document.write("</tr>");
-                  j++;
-                }
+                  PE_Path = "file/file/student file/paradise/engineering/";
+                  File_Number++;
+                  Show(PETotal, PETitle, PE_Path, File_Number, PELink, PEClasses, PENames);
+                  // PETotal = 計算總共幾筆;變數檔案在file/js/paradise/engineering/
+                  // PETitle = 樂學園-工學院標題1;變數檔案在file/js/paradise/engineering/
+                  // PELink = 樂學園-工學院標題2(連結部分,藍色字體);變數檔案在file/js/paradise/engineering/
+                  // PEClasses = 樂學園-工學院班級;變數檔案在file/js/paradise/engineering/
+                  // PENames = 樂學園-工學院姓名;變數檔案在file/js/paradise/engineering/
                 </script>
                 <tr>
 					<script>
