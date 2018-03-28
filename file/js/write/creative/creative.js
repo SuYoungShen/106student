@@ -1,63 +1,59 @@
-ï»¿	function CRanking(i){//æ¨™é¡Œ1
-		var sc = "ã€€";
-		var topics = [
-						"ç¬¬ä¸€å",
-						"ç¬¬äºŒå",
-						"ç¬¬ä¸‰å",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ"
-					];
-		CR = topics.length;
-		return topics[i];
-	}
+//¼g§@¤ñÁÉ-³Ð·N¼g§@-¼ÐÃD1
+var sc = "¡@";
+var WCTitle = [
+  "²Ä¤@¦W",
+  "²Ä¤G¦W",
+  "²Ä¤T¦W",
+  "¨Î"+sc+"§@",
+  "¨Î"+sc+"§@",
+  "¨Î"+sc+"§@",
+  "¨Î"+sc+"§@",
+  "¨Î"+sc+"§@",
+  "¨Î"+sc+"§@"
+];
+//¼g§@¤ñÁÉ-³Ð·N¼g§@-¼ÐÃD1
 
-	function CTopic(i){//æ¨™é¡Œ2(é€£çµéƒ¨åˆ†,è—è‰²å­—é«”)
-		var topics = [
-						"é›²ç«¯",
-						"è½é›¨",
-						"éš±èº«éƒ½å¸‚çš„æ¡ƒèŠ±æº",
-						"è¾²æ‘ç”Ÿæ´»ä¹‹æ¨‚è¶£",
-						"æˆ‘çš„æ„›æ¨‚æ™‚å…‰",
-						"ç”Ÿæ´»ä¸­çš„ç¾Žå¥½ç¶“é©—",
-						"æ­Œä»”æˆ²ä¹‹æ—…",
-						"é˜®é˜¿å…¬",
-						"èˆ‡çˆ¶è¦ªçš„é€™æ®µè·¯"
-					];
+//­pºâÁ`¦@´Xµ§
+WCTotal = WCTitle.length;
+//­pºâÁ`¦@´Xµ§
 
-		return topics[i];
-	}
+//¼g§@¤ñÁÉ-³Ð·N¼g§@-¼ÐÃD2(³sµ²³¡¤À,ÂÅ¦â¦rÅé)
+var WCLink = [
+  "¶³ºÝ",
+  "Å¥«B",
+  "Áô¨­³£¥«ªº®çªá·½",
+  "¹A§ø¥Í¬¡¤§¼Ö½ì",
+  "§Úªº·R¼Ö®É¥ú",
+  "¥Í¬¡¤¤ªº¬ü¦n¸gÅç",
+  "ºq¥JÀ¸¤§®È",
+  "¨¿ªü¤½",
+  "»P¤÷¿Ëªº³o¬q¸ô"
+];
+//¼g§@¤ñÁÉ-³Ð·N¼g§@-¼ÐÃD2(³sµ²³¡¤À,ÂÅ¦â¦rÅé)
 
-	function CClasses(i){//ç­ç´š
-		var classess = [
-						"æ—¥é–“éƒ¨å››æŠ€å»ºç¯‰äºŒç”²",
-						"æ—¥é–“éƒ¨å››æŠ€æ•¸ä½ä¸€ç”²",
-						"æ—¥é–“éƒ¨å››æŠ€ä¼ç®¡äºŒä¹™",
-						"æ—¥é–“éƒ¨å››æŠ€å¹¼ä¿ä¸€ç”²",
-						"æ—¥é–“éƒ¨å››æŠ€åœ‹ä¼ä¸€ç”²",
-						"æ—¥é–“éƒ¨å››æŠ€ä¼ç®¡ä¸€ä¹™",
-						"é€²ä¿®éƒ¨å››æŠ€æ™‚å°šä¸€ç”²",
-						"é€²ä¿®å°ˆæ ¡äºŒå°ˆä¼ç®¡ä¸€æˆŠ",
-						"é€²ä¿®å°ˆæ ¡äºŒå°ˆä¼ç®¡ä¸€æˆŠ"
-						];
-		return classess[i];
-	}
+//¼g§@¤ñÁÉ-³Ð·N¼g§@-¯Z¯Å
+var WCClasses = [
+  "¤é¶¡³¡¥|§Þ«Ø¿v¤G¥Ò",
+  "¤é¶¡³¡¥|§Þ¼Æ¦ì¤@¥Ò",
+  "¤é¶¡³¡¥|§Þ¥øºÞ¤G¤A",
+  "¤é¶¡³¡¥|§Þ¥®«O¤@¥Ò",
+  "¤é¶¡³¡¥|§Þ°ê¥ø¤@¥Ò",
+  "¤é¶¡³¡¥|§Þ¥øºÞ¤@¤A",
+  "¶i­×³¡¥|§Þ®É©|¤@¥Ò",
+  "¶i­×±M®Õ¤G±M¥øºÞ¤@¥³",
+  "¶i­×±M®Õ¤G±M¥øºÞ¤@¥³"
+];
+//¼g§@¤ñÁÉ-³Ð·N¼g§@-¯Z¯Å
 
-	function CNames(i){//å§“å
-		var namess = [
-						"çŽ‹å’¨æ·¨",
-						"æž—å“²ç·¯",
-						"æŽä½³æ€¡",
-						"é„­å­£å®œ",
-						"ç¿é–æ¶µ",
-						"ç°¡ç§€çŠ",
-						"åŠ‰äºŽéƒ¡",
-						"æž—å¿—éš†",
-						"é™³ç¾½æ­†"
-					];
-		return namess[i];
-	}
-	CRanking();
+//¼g§@¤ñÁÉ-³Ð·N¼g§@-©m¦W
+var WCNames = [
+  "¤ý«t²b",
+  "ªL­õ½n",
+  "§õ¨Î©É",
+  "¾G©u©y",
+  "¯Î¹t²[",
+  "Â²¨q¬À",
+  "¼B¤_°p",
+  "ªL§Ó¶©",
+  "³¯¦ÐÝõ"
+];

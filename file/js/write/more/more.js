@@ -1,47 +1,48 @@
-ï»¿	function MORanking(i){//æ¨™é¡Œ1
-		var sc = "ã€€";
-		var topics = [
-						"ç¬¬ä¸€å",
-						"ç¬¬äºŒå",
-						"ç¬¬ä¸‰å",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ",
-						"ä½³"+sc+"ä½œ"
-					];
-		MOR = topics.length;
-		return topics[i];
-	}
 
-	function MOClasses(i){//ç­ç´š(é€£çµéƒ¨åˆ†,è—è‰²å­—é«”)
-		var classess = [
-						"æ—¥é–“éƒ¨å››æŠ€é¤é£²ä¸€ç”²",
-						"æ—¥é–“éƒ¨å››æŠ€åœ‹ä¼ä¸‰ç”²",
-						"æ—¥é–“éƒ¨å››æŠ€é¤é£²ä¸€ä¹™",
-						"æ—¥é–“éƒ¨å››æŠ€å»ºç¯‰ä¸€ä¹™",
-						"æ—¥é–“éƒ¨å››æŠ€ä¼ç®¡å››ä¹™",
-						"æ—¥é–“éƒ¨å››æŠ€åœŸæœ¨ä¸€ç”²",
-						"æ—¥é–“éƒ¨å››æŠ€ä¼ç®¡ä¸€ä¹™",
-						"æ—¥é–“éƒ¨å››æŠ€é¤é£²ä¸€ç”²",
-						"æ—¥é–“éƒ¨å››æŠ€åœ‹ä¼ä¸‰ç”²"
-						];
-		return classess[i];
-	}
+//¼g§@¤ñÁÉ-¦hµ²§½-¼ÐÃD1
+var sc = "¡@";
+var WMMTitle = [
+	"²Ä¤@¦W",
+	"²Ä¤G¦W",
+	"²Ä¤T¦W",
+	"¨Î"+sc+"§@",
+	"¨Î"+sc+"§@",
+	"¨Î"+sc+"§@",
+	"¨Î"+sc+"§@",
+	"¨Î"+sc+"§@",
+	"¨Î"+sc+"§@"
+];
+//¼g§@¤ñÁÉ-¦hµ²§½-¼ÐÃD1
 
-	function MONames(i){//å§“å
-		var namess = [
-						"è”¡ä¼Šå©·",
-						"åŠ‰é´»æ…¶",
-						"å¼µå“²ç¶­",
-						"é™³ä½³ä¼¶",
-						"å³æ€éœ†",
-						"é»ƒé¦¨èª ",
-						"é™³æ€¡å¹³",
-						"è”¡å“²éœ–",
-						"é»ƒéˆºå©·"
-					];
-		return namess[i];
-	}
-	MORanking();
+//­pºâÁ`¦@´Xµ§
+WMMTotal = WMMTitle.length;
+//­pºâÁ`¦@´Xµ§
+
+
+//¼g§@¤ñÁÉ-¦hµ²§½-¯Z¯Å
+var WMMClasses = [
+	"¤é¶¡³¡¥|§ÞÀ\¶¼¤@¥Ò",
+	"¤é¶¡³¡¥|§Þ°ê¥ø¤T¥Ò",
+	"¤é¶¡³¡¥|§ÞÀ\¶¼¤@¤A",
+	"¤é¶¡³¡¥|§Þ«Ø¿v¤@¤A",
+	"¤é¶¡³¡¥|§Þ¥øºÞ¥|¤A",
+	"¤é¶¡³¡¥|§Þ¤g¤ì¤@¥Ò",
+	"¤é¶¡³¡¥|§Þ¥øºÞ¤@¤A",
+	"¤é¶¡³¡¥|§ÞÀ\¶¼¤@¥Ò",
+	"¤é¶¡³¡¥|§Þ°ê¥ø¤T¥Ò"
+];
+//¼g§@¤ñÁÉ-¦hµ²§½-¯Z¯Å
+
+//¼g§@¤ñÁÉ-¦hµ²§½-©m¦W
+var WMMNames = [
+	"½²¥ì´@",
+	"¼BÂE¼y",
+	"±i­õºû",
+	"³¯¨Î§D",
+	"§d«ä¾^",
+	"¶ÀÄÉ¸Û",
+	"³¯©É¥­",
+	"½²­õÀM",
+	"¶Àà±´@"
+];
+//¼g§@¤ñÁÉ-¦hµ²§½-©m¦W
